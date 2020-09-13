@@ -1,0 +1,45 @@
+let variableName: type = value;
+
+let numberName: number = 10;
+let stringName: string = "10";
+let booleanName: boolean = true;
+
+let spaceShuttleName: string = "Determiniation";
+let shuttleSpeed: number = 17500;
+let distanceToMars: number = 225000000;
+
+
+let arrayName: number[] = [10,9,8];
+let arrayName: string[] = ["10", "9", "8"];
+
+let tupleName: [number, string, number];
+tupleName = [10, "9", 8];
+
+
+function myFunction(x: number): number {
+return x*2;
+}
+
+function myFunction(x: number): void {
+y =x*2;
+}
+
+let myFunction = function(x: number): number {return x*2};
+
+function myFunction(a: number, b?:number): number {
+return a+b+5;
+}
+console.log(myFunction(1,2));
+
+
+class Astronaut {
+  name: string;
+  constructor(firstName: string, lastName:string) {
+    this.name = firstName + " " + lastName;
+  }
+  greet() {
+    return "Hello, " + this.name;
+  }
+}
+
+let Bob = new Astronaut("Bob", "Smith");
